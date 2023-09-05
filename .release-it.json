@@ -1,0 +1,39 @@
+{
+    "git": {
+        "requireBranch": "main",
+        "commitMessage": "chore: version v${version}"
+    },
+    "hooks": {
+        "before:init": [
+            "git pull",
+            "npm run lint"
+        ],
+        "after:bump": "npx auto-changelog -p",
+        "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+    },
+    "github": {
+        "release": true
+    },
+    "npm": {
+        "publish": false
+    },
+    "plugins": {
+        "@release-it/conventional-changelog": {
+            "infile": "CHANGELOG.md",
+            "preset": {
+                "name": "conventionalcommits",
+                "types": [
+                    {
+                        "type": "feat",
+                        "section": "Features"
+                    },
+                    {
+                        "type": "fix",
+                        "section": "Bug Fixes"
+                    },
+                    {}
+                ]
+            }
+        }
+    }
+}
