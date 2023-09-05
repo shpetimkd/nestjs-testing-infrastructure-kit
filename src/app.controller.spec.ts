@@ -1,4 +1,4 @@
-import { TestFixture } from '../test/test-fixture';
+import { TestFixture } from 'test/test-fixture';
 
 describe('AppController', () => {
   let fixture: TestFixture;

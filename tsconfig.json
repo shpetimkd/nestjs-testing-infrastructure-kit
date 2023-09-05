@@ -16,10 +16,6 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
-    "baseUrl": "./",
-    "paths": {
-      "test/*": ["src/test/*"]
-    }
+    "noFallthroughCasesInSwitch": false
   }
 }

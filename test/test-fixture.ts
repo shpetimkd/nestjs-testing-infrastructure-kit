@@ -1,7 +1,7 @@
 import { INestApplication } from '@nestjs/common';
 import { TestingModule, Test } from '@nestjs/testing';
 import * as supertest from 'supertest';
-import { AppModule } from '../src/app.module';
+import { AppModule } from 'src/app.module';
 
 export class TestFixture {
   private app: INestApplication;

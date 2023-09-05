@@ -67,8 +67,7 @@
       "<rootDir>/**/*.(t|j)s"
     ],
     "coveragePathIgnorePatterns": [
-      "main.ts",
-      ".strategy.ts"
+      "main.ts"
     ],
     "setupFilesAfterEnv": [
       "<rootDir>/../test/jest.setup.ts"
