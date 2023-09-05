@@ -1,3 +1,5 @@
+[![Check Workflow](https://github.com/shpetimkd/nestjs-testing-module-boilerplate/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/shpetimkd/nestjs-testing-module-boilerplate/actions/workflows/publish.yml)
+
 # Testing Infrastructure Setup with NestJS, Jest, Supertest, and @testcontainers/postgresql
 
 This repository provides a configuration of the testing infrastructure setup for a NestJS application using Jest for testing, Supertest for making HTTP requests to the application, and `@testcontainers/postgresql` for managing PostgreSQL database containers during tests.
