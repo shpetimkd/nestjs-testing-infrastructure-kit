@@ -26,6 +26,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
+          git config user.name "shpetimkd"
+          git config user.email "kadrijashpetim@gmail.com"
           git add .
           git commit -m "Commit changes for release"
           git push
