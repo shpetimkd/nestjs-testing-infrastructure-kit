@@ -23,14 +23,3 @@ jobs:
 
       - name: Run tests
         run: npm run test
-
-      - name: Commit and Push Changes
-        run: |
-          git config user.name "shpetimkd"
-          git config user.email "kadrijashpetim@gmail.com"
-          git add .
-          git commit -m "Commit changes for release"
-          git push
-
-      - name: Run release
-        run: npm run release --ci
