@@ -54,8 +54,9 @@ describe('My API Tests', () => {
     await fixture.stopApp();
   });
 
-  test('GET /api/my-endpoint should return 200 OK', async () => {
+  it('GET /api/my-endpoint should return 200 OK', async () => {
     const response = await fixture.request.get('/api/my-endpoint');
     expect(response.status).toBe(HttpStatus.OK);
+    expect(response.statusCode).toBe(200);
   });
 });
